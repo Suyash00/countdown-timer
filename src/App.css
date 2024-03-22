@@ -1,38 +1,81 @@
-.App {
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+em {
+  color: blue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  /* text-align: center; */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* height: 100vh; */
 }
 
-.App-link {
-  color: #61dafb;
+.time-box {
+  border: 1px solid black;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.picker {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styles for desktop devices */
+@media screen and (min-width: 768px) {
+  /* Add your desktop styles here */
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 767px) {
+  /* Add your mobile styles here */
+  .time-box {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input[type="datetime-local"] {
+    width: 90%;
   }
 }
