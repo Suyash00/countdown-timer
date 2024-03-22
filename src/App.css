@@ -61,14 +61,8 @@ button:hover {
   margin-top: 20px;
 }
 
-/* Styles for desktop devices */
-@media screen and (min-width: 768px) {
-  /* Add your desktop styles here */
-}
-
 /* Styles for mobile devices */
 @media screen and (max-width: 767px) {
-  /* Add your mobile styles here */
   .time-box {
     padding: 10px;
     margin: 5px;
